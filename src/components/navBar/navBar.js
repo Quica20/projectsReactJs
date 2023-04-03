@@ -1,20 +1,21 @@
 //Componente de tipo Funcional
 import React, {Fragment} from 'react';
 import './navBar.css';
-import img from './imgNavBar/logo-website-file-globe-icon-svg-wikimedia-commons-21.png'
+import { Link } from "react-router-dom";
 
-const NavBar = (props) => {
+
+const NavBar = () => {
   return (
     <Fragment>
         <header class="header">
         <div class="logo">
-            <img src={img} alt="logo"/>     
+            <a>TuTienda.com</a>
         </div>
         <nav>
             <ul class="navsLinks">
-             <li><a href='#'>{props.first}</a></li>
-             <li><a href='#'>{props.seconds}</a></li>
-             <li><a href='#'>{props.third}</a></li>
+             <Link className='Link' to="/"><a>INICIO</a></Link>
+             <Link className='Link' to="/about"><a>SOBRE NOSOTROS</a></Link>
+             <Link className='Link' to="/contact"><a>CONTACTO</a></Link>
             </ul>
         </nav>
         </header>

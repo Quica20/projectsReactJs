@@ -17,25 +17,22 @@
     padding: 5px 10%;
 }
 
-.header .logo{
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.header a{
     cursor: pointer;
 }
 
-.header .logo img{
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.header .logo img:hover{
-    transform: scale(1.2);
-}
 
 .header .navsLinks{
     list-style: none;
 }
 
-.header .navsLinks li{
+.header .navsLinks Link{
     display: inline-block;
     padding: 0 20px;
 }
@@ -50,6 +47,6 @@
     cursor: pointer;
 }
 
-.header .navsLinks li:hover{
+.header .navsLinks Link:hover{
     transform: scale(1.2);
 }
