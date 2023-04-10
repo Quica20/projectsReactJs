@@ -3,6 +3,7 @@ import './cardProduct.css'
 
 /* Contenido de la card de MUI */
 
+import { Link } from 'react-router-dom';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -24,12 +25,16 @@ const CardProduct = ({data}) => {
         {data.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        <a> Precio: ${data.price}</a>    
+        <a> Precio: ${data.price}</a> 
+        <p>{data.description}</p> 
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Agregar</Button>
-        <Button size="small">Detalles</Button>
+
+        <Link to="/src/pages/sobreNosotros/sobreNosotros.js">
+          <Button size="small">Detalles</Button>
+        </Link>
       </CardActions>
     </Card>
   );
